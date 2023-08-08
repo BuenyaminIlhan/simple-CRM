@@ -3,3 +3,52 @@
   right: 56px;
   bottom: 56px;
 }
+
+mat-card {
+  margin-bottom: 16px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr {
+    border-bottom: solid 1px rgba(172, 165, 165, 0.25);
+    cursor: pointer;
+    &:first-child {
+      cursor: unset;
+
+      &:hover {
+        background-color: unset;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+    td {
+      height: 48px;
+
+      &:first-child {
+        padding-left: 16px;
+      }
+    }
+    th {
+      &:first-child {
+        padding-left: 16px;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(128, 128, 128, 0.381);
+    }
+  }
+
+  th {
+    color: lightgray;
+    text-align: start;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 16px;
+  }
+}
