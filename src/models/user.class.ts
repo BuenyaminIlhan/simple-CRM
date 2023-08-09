@@ -6,6 +6,7 @@ export class User {
   street: string;
   zipCode: number;
   city: string;
+  userId: User;
 
   /**
    * Creates a new User object.

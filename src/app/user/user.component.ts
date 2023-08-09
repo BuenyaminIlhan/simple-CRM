@@ -24,7 +24,5 @@ export class UserComponent {
 
   getUser() {
     this.users$ = collectionData(this.usersCollection, { idField: 'id' })
-    this.users$.forEach(user => {
-    });
   }
 }
